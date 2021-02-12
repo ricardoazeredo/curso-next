@@ -28,7 +28,7 @@ export default function Category({ category, products }: CategoryProps ) {
           {products.map(product => {
             return (
               <li key={product.id}>
-                <Link href={`/catalog/products/${product.id}`} >
+                <Link href={`/catalog/products/${product.uid}`} >
                   <a>
                     {RichText.asText(product.data.title)}
                   </a>
