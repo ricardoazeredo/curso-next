@@ -17,7 +17,7 @@ export default function Product({ product }: ProductProps) {
   if(router.isFallback) {
     return <p>Carregando ...</p>
   }
-  console.log(product.data);
+  
   return (
     <div>
       <h1>
